@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restauración de Muebles</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .before-after {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .before-after img {
+            width: 100%;
+            display: block;
+        }
+
+        .after-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .slider {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: white;
+            cursor: ew-resize;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR -->
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between">
+
+            <h1 class="font-bold text-xl">
+                Restauración de Muebles
+            </h1>
+
+            <div class="space-x-6 hidden md:block">
+
+                <a href="#trabajos">Trabajos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="h-screen flex items-center justify-center text-center bg-cover bg-center"
+        style="background-image:url('https://picsum.photos/1600/900?random=1')">
+
+        <div class="bg-black/60 absolute inset-0"></div>
+
+        <div class="relative text-white max-w-2xl px-6">
+
+            <h2 class="text-5xl font-bold mb-6">
+                Transformamos muebles viejos en piezas únicas
+            </h2>
+
+            <p class="mb-8 text-lg">
+                Restauración, tapicería y reparación profesional
+            </p>
+
+            <a href="https://wa.me/5210000000000"
+                class="bg-orange-500 px-8 py-4 rounded-lg font-semibold hover:bg-orange-600">
+
+                Cotizar por WhatsApp
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ANTES / DESPUÉS -->
+
+    <section id="trabajos" class="py-20">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Antes y Después
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+
+
+                <div class="before-after">
+
+                    <img src="https://picsum.photos/1200/800?random=2">
+
+                    <div class="after-img">
+
+                        <img src="https://picsum.photos/1200/800?random=3">
+
+                    </div>
+
+                    <div class="slider"></div>
+
+                </div>
+
+
+
+                <div class="before-after">
+
+                    <img src="https://picsum.photos/1200/800?random=4">
+
+                    <div class="after-img">
+
+                        <img src="https://picsum.photos/1200/800?random=5">
+
+                    </div>
+
+                    <div class="slider"></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SERVICIOS -->
+
+    <section id="servicios" class="bg-white py-20">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Servicios
+            </h2>
+
+            <div class="grid md:grid-cols-4 gap-10 text-center">
+
+
+                <div class="p-6 shadow rounded-xl">
+                    <h3 class="font-semibold text-xl mb-3">
+                        Restauración
+                    </h3>
+                    <p class="text-gray-600">
+                        Recuperamos muebles antiguos o dañados
+                    </p>
+                </div>
+
+
+                <div class="p-6 shadow rounded-xl">
+                    <h3 class="font-semibold text-xl mb-3">
+                        Tapicería
+                    </h3>
+                    <p class="text-gray-600">
+                        Cambio de telas modernas y resistentes
+                    </p>
+                </div>
+
+
+                <div class="p-6 shadow rounded-xl">
+                    <h3 class="font-semibold text-xl mb-3">
+                        Pintura
+                    </h3>
+                    <p class="text-gray-600">
+                        Lacas, barnices y acabados
+                    </p>
+                </div>
+
+
+                <div class="p-6 shadow rounded-xl">
+                    <h3 class="font-semibold text-xl mb-3">
+                        Reparaciones
+                    </h3>
+                    <p class="text-gray-600">
+                        Refuerzo de estructuras
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- GALERÍA -->
+
+    <section id="galeria" class="py-20">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Galería
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <img class="rounded-lg shadow" src="https://picsum.photos/800/600?random=6">
+                <img class="rounded-lg shadow" src="https://picsum.photos/800/600?random=7">
+                <img class="rounded-lg shadow" src="https://picsum.photos/800/600?random=8">
+                <img class="rounded-lg shadow" src="https://picsum.photos/800/600?random=9">
+                <img class="rounded-lg shadow" src="https://picsum.photos/800/600?random=10">
+                <img class="rounded-lg shadow" src="https://picsum.photos/800/600?random=11">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="bg-orange-500 text-white py-20 text-center">
+
+        <h2 class="text-4xl font-bold mb-6">
+
+            ¿Tienes un mueble que quieres restaurar?
+
+        </h2>
+
+        <p class="mb-10">
+
+            Envíanos fotos y te cotizamos rápidamente
+
+        </p>
+
+        <a href="https://wa.me/5210000000000" class="bg-white text-orange-500 px-8 py-4 rounded-lg font-bold">
+
+            Enviar fotos
+
+        </a>
+
+    </section>
+
+
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="py-20">
+
+        <div class="max-w-3xl mx-auto text-center px-6">
+
+            <h2 class="text-4xl font-bold mb-10">
+
+                Contacto
+
+            </h2>
+
+            <p class="mb-2">
+                Dirección del taller
+            </p>
+
+            <p class="mb-2">
+                Teléfono: 55 0000 0000
+            </p>
+
+            <p>
+                Horario: Lunes a Sábado
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BOTÓN WHATSAPP -->
+
+    <a href="https://wa.me/5210000000000"
+        class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg text-xl">
+
+        💬
+
+    </a>
+
+
+
+    <script>
+
+        document.querySelectorAll(".before-after").forEach(container => {
+
+            let slider = container.querySelector(".slider");
+            let after = container.querySelector(".after-img");
+
+            container.addEventListener("mousemove", e => {
+
+                let rect = container.getBoundingClientRect();
+                let x = e.clientX - rect.left;
+
+                after.style.width = x + "px";
+                slider.style.left = x + "px";
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
