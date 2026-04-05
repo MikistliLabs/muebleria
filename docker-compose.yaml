@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  muebleria:
+    build: .
+    container_name: muebleria
+    ports:
+      - "8080:80"
